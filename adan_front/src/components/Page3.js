@@ -347,7 +347,7 @@ export default function Page3() {
         };
         console.log(cls);
         try {
-            const response = await fetch('https://adaan-pradaan-back-end.vercel.app//api/add_lab', {
+            const response = await fetch('https://adaan-pradaan-back-end.vercel.app/api/add_lab', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
@@ -406,7 +406,7 @@ export default function Page3() {
 
 
             const cls = { email, college, booked1 };
-            const response = await fetch('https://adaan-pradaan-back-end.vercel.app//api/updatethemanagementdeleted', {
+            const response = await fetch('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementdeleted', {
 
                 method: 'PUT',
                 headers: {
@@ -439,7 +439,7 @@ export default function Page3() {
 
 
             const cls = { email, college, booked1 };
-            const response = await fetch('https://adaan-pradaan-back-end.vercel.app//api/updatethemanagementbooked', {
+            const response = await fetch('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementbooked', {
 
                 method: 'PUT',
                 headers: {
