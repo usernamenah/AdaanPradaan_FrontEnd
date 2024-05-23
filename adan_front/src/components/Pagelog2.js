@@ -10,7 +10,7 @@ export default function Pagelog2() {
                 const email = document.getElementById("une").value;
                 const password = document.getElementById("pwd").value;
                
-                const response = await fetch('http://localhost:4000/api/login', {
+                const response = await fetch('https://adaan-pradaan-back-end.vercel.app//api/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export default function Pagelog2() {
 
                 const data = { email, password , idno };
 
-                const response = await fetch('http://localhost:4000/api/login_management', {
+                const response = await fetch('https://adaan-pradaan-back-end.vercel.app//api/login_management', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -161,7 +161,7 @@ export default function Pagelog2() {
 
         console.log(cls);
         // fetch('http://localhost:3010/sellers/postdata'
-        fetch('http://localhost:4000/api/register', {
+        fetch('https://adaan-pradaan-back-end.vercel.app//api/register', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -198,7 +198,7 @@ export default function Pagelog2() {
         };
         console.log(cls);
         // fetch('http://localhost:3010/sellers/postdata'
-        fetch('http://localhost:4000/api/register_management', {
+        fetch('https://adaan-pradaan-back-end.vercel.app//api/register_management', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

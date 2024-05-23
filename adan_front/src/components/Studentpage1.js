@@ -25,7 +25,7 @@ export default function Studentpage1() {
         console.log(student_booked);
         // alert("Username: " + storedUsername + "\nDate of Birth: " + storedDOB);
         try {
-            const response = await fetch('http://localhost:4000/api/showlabstostudent', {
+            const response = await fetch('https://adaan-pradaan-back-end.vercel.app//api/showlabstostudent', {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json",
@@ -116,14 +116,14 @@ export default function Studentpage1() {
             const cls1 = { bc , jj };
 
 
-            const response = await fetch('http://localhost:4000/api/updatethestudentbooked', {
+            const response = await fetch('https://adaan-pradaan-back-end.vercel.app//api/updatethestudentbooked', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(cls)
             });
-            const response1 = await fetch('http://localhost:4000/api/updatethemanagementstudentbookings', {
+            const response1 = await fetch('https://adaan-pradaan-back-end.vercel.app//api/updatethemanagementstudentbookings', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",
