@@ -1,0 +1,944 @@
+.piribo{
+    
+    position: fixed; 
+    top: 70px; 
+    left: 1330px; 
+    width: 441px; 
+    height: 410px; 
+    background: #8F6600FF; 
+    overflow-x: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px #8F6600FF , 0px 0px 3px #8F6600FF;
+    transition: all 0.3s ease;
+  }
+  .piribo:hover {
+           
+            background-color: #8F6600FF;
+            transform: scale(1.1);
+  }
+  
+  
+  
+  
+  .namebox{
+    position: absolute; 
+    top: 45px; 
+    left: 1px; 
+    width: 180px; 
+    height: 100px; 
+    background: rgb(255, 255, 255); 
+    border-radius: 10px 10px 10px 10px; 
+  }
+  .searchbox{
+    position: absolute; 
+    top: 75px; 
+    left: 400px; 
+    width: 600px; 
+    height: 60px; 
+    background: rgb(255, 255, 255); 
+    border-radius: 20px 0px 0px 20px;
+    border-color: #8F6600FF ; 
+    box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+  }
+  .searchbutton{
+    position: absolute; 
+    top: 75px; 
+    left: 1000px; 
+    width: 100px; 
+    height: 60px; 
+    background: #8F6600FF; 
+    border-radius: 0px 20px 20px 0px;
+    border-color: #8F6600FF ; 
+    box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+  }
+  .logo{
+    position: absolute;
+    top: 40px;
+    left: 35px;
+   box-shadow: 0px 0px 40px #ffffff, 0px 0px 5px #ffffff; 
+   transition: all 0.3s ease;
+  }
+  .logo:hover {
+            background-color: rgb(126, 92, 20);
+            transform: scale(1.3);
+          }
+  .searchicon{
+    position: absolute;
+    top: 15px;
+    left: 30px; ;
+  }
+  .seatet{
+  position: absolute;
+  top: 0px; 
+  left: 0px; 
+  width: 600px; 
+  height: 60px;
+  border-radius: 20px 0px 0px 20px;
+    border-color: #8F6600FF ; 
+    box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+  }
+  .yeartext{
+    position: absolute;
+    top: 8px;
+    left: 30px;
+  }
+  .paiki1{
+    transition: all 0.2s ease;
+  }
+  .paiki1:hover {
+            background-color: #8F6600FF;
+            transform: scale(1.1);
+          }
+          .yearbox2{
+            position: absolute; 
+            top: 750px; 
+            left: 0px;
+            width: 300px; 
+            height: 67px; 
+            background: #8F6600FF; 
+            border-radius: 8px; 
+            border-radius:  0px 40px 40px 0px ;
+            box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+            transition: all 0.3s ease;
+          }
+          
+          .yearbox2:hover {
+                    background-color: #8F6600FF;
+                    transform: scale(1.1);
+                  }
+  .yearbox1{
+    position: absolute; 
+    top: 300px; 
+    left: 0px;
+    width: 300px; 
+    height: 67px; 
+    background: #8F6600FF; 
+    border-radius: 8px; 
+    border-radius:  0px 40px 40px 0px ;
+    box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+    transition: all 0.3s ease;
+  }
+  
+  .yearbox1:hover {
+            background-color: #8F6600FF;
+            transform: scale(1.1);
+          }
+
+          .yearbox3{
+            position: absolute; 
+            top: 1200px; 
+            left: 0px;
+            width: 300px; 
+            height: 67px; 
+            background: #8F6600FF; 
+            border-radius: 8px; 
+            border-radius:  0px 40px 40px 0px ;
+            box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+            transition: all 0.3s ease;
+          }
+          
+          .yearbox3:hover {
+                    background-color: #8F6600FF;
+                    transform: scale(1.1);
+                  }
+  .branch01{
+    position: absolute; 
+    top: 500px; 
+    left: 100px; 
+    width: 200px; 
+    height: 100px; 
+    background: 	#FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+  }
+  .branch01:hover {
+            background-color: rgb(126, 92, 20);
+            transform: scale(1.1);
+          }
+  .branch02{
+    position: absolute; 
+    top: 500px; 
+    left: 400px; 
+    width: 200px; 
+    height: 100px; 
+    background: #FFEBCD;  
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+  }
+  .branch02:hover {
+            background-color: rgb(126, 92, 20);
+            transform: scale(1.1);
+          }
+  .branch03{
+  
+    position: absolute; 
+    top: 500px; 
+    left: 700px; 
+    width: 200px; 
+    height: 100px; 
+    background: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+  }
+  .branch03:hover {
+            background-color: rgb(126, 92, 20);
+            transform: scale(1.1);
+          }
+  .branch04{
+    position: absolute; 
+    top: 500px; 
+    left: 1000px; 
+    width: 200px; 
+    height: 100px; 
+    background: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255);  
+    transition: all 0.3s ease;
+  }
+  .branch04:hover {
+            background-color: rgb(126, 92, 20);
+            transform: scale(1.1);
+          }
+  
+  .img-usna{
+    position: absolute; 
+    top: 20px; 
+    left: 250px; 
+    width: 100px; 
+    height: 100px;
+    border-radius: 96px; 
+    border-width: 1px; 
+    border-color: #ffffff; 
+    box-shadow: 0px 0px 0px #DEB887, 0px 0px 3px #DEB887; /* shadow-xl */
+  }
+  .op1{
+    position: absolute;
+    left: 30px;
+    top: 150px;
+    width: 310px;
+    height: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .op2{
+    position: absolute;
+    left: 30px;
+    top: 250px;
+    width: 310px;
+    height: 80px;
+    transition: all 0.3s ease;
+  }
+
+
+
+  .branch11{
+    position: absolute; 
+    top: 880px; 
+    left: 100px; 
+    width: 200px; 
+    height: 100px; 
+    background: 	#FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+  }
+  .branch11:hover {
+            background-color: rgb(126, 92, 20);
+            transform: scale(1.1);
+          }
+  .branch12{
+    position: absolute; 
+    top: 880px; 
+    left: 400px; 
+    width: 200px; 
+    height: 100px; 
+    background: #FFEBCD;  
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+  }
+  .branch12:hover {
+            background-color: rgb(126, 92, 20);
+            transform: scale(1.1);
+          }
+  .branch13{
+  
+    position: absolute; 
+    top: 880px; 
+    left: 700px; 
+    width: 200px; 
+    height: 100px; 
+    background: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+  }
+  .branch13:hover {
+            background-color: rgb(126, 92, 20);
+            transform: scale(1.1);
+          }
+  .branch14{
+    position: absolute; 
+    top: 880px; 
+    left: 1000px; 
+    width: 200px; 
+    height: 100px; 
+    background: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255);  
+    transition: all 0.3s ease;
+  }
+  .branch14:hover {
+            background-color: rgb(126, 92, 20);
+            transform: scale(1.1);
+          }
+  
+
+
+          .branch21{
+            position: absolute; 
+            top: 1400px; 
+            left: 100px; 
+            width: 200px; 
+            height: 100px; 
+            background: 	#FFEBCD;
+            border-radius: 20px 20px 20px 20px; 
+            box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+            transition: all 0.3s ease;
+          }
+          .branch21:hover {
+                    background-color: rgb(126, 92, 20);
+                    transform: scale(1.1);
+                  }
+          .branch22{
+            position: absolute; 
+            top: 1400px; 
+            left: 400px; 
+            width: 200px; 
+            height: 100px; 
+            background: #FFEBCD;  
+            border-radius: 20px 20px 20px 20px; 
+            box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+            transition: all 0.3s ease;
+          }
+          .branch22:hover {
+                    background-color: rgb(126, 92, 20);
+                    transform: scale(1.1);
+                  }
+          .branch23{
+          
+            position: absolute; 
+            top: 1400px; 
+            left: 700px; 
+            width: 200px; 
+            height: 100px; 
+            background: #FFEBCD;
+            border-radius: 20px 20px 20px 20px; 
+            box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+            transition: all 0.3s ease;
+          }
+          .branch23:hover {
+                    background-color: rgb(126, 92, 20);
+                    transform: scale(1.1);
+                  }
+          .branch24{
+            position: absolute; 
+            top: 1400px; 
+            left: 1000px; 
+            width: 200px; 
+            height: 100px; 
+            background: #FFEBCD;
+            border-radius: 20px 20px 20px 20px; 
+            box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255);  
+            transition: all 0.3s ease;
+          }
+          .branch24:hover {
+                    background-color: rgb(126, 92, 20);
+                    transform: scale(1.1);
+                  }
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .container-fluid-down{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 600px;
+
+    width: 100%;
+    height: 100%;
+    word-break: break-all;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .bloc-tabs {
+    display: flex;
+  }
+  .tabs {
+  
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+  }
+  .tabs:not(:last-child){
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .active-tabs  {
+    background:#FFEBCD ;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: rgb(88, 147, 241);
+  }
+  
+  
+  
+  .button {
+    border: none;
+
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+  .content {
+    
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+  }
+
+
+  #branchv{
+    
+    display: none;
+  }
+  
+  #subjectv{
+    display: none;
+  }
+
+
+  .date{
+    position: absolute;
+    font-size: 2rem;
+    top: 5rem;
+    font-family: Georgia, serif;
+    border: none;
+    height: 4rem;
+    background-color: #FFEBCD;
+    
+    outline: none;
+    cursor:help;
+    
+    
+
+  }
+#dc{
+  position:absolute;
+  top: 1750px;
+  width: 44rem;
+  left: 3rem;
+  display: none;
+ 
+}
+
+
+.yearbox4{
+  position: absolute; 
+  width: 300px; 
+  z-index: 3;
+  left: 0px;
+  height: 67px; 
+  background: #8F6600FF; 
+  border-radius: 8px; 
+  border-radius:  0px 40px 40px 0px ;
+  box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+  transition: all 0.3s ease;
+}
+.yearbox4:hover {
+    transform: scale(1.1);
+  }
+
+
+  .comebranch{
+    position: absolute;
+    background-color: transparent;
+    width: 500px;
+    height: 50px;
+    top: 40rem;
+    left: 2rem;
+  }
+  .comebranch1{
+    position: absolute;
+    background-color: transparent;
+    width: 500px;
+    height: 50px;
+    top: 65rem;
+    left: 2rem;
+  }
+  .cover1{
+    position: absolute;
+    height: 68px;
+    width: 100px;
+    background-color: #8F6600FF;
+    left:-50px;
+    top: 0rem;
+  }
+  .cbi{
+    outline: none;
+    border: none;
+    
+    z-index: 5;
+    position: absolute;
+    top: 880px; 
+    left: 2000px;
+    width: 200px; 
+    height: 100px; 
+    background: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+  }
+
+  .csi{
+    outline: none;
+    border: none;
+    
+    z-index: 6;
+    position: absolute;
+    top: 1400px; 
+    left: 2000px;
+    width: 200px; 
+    height: 100px; 
+    background: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+  }
+  .forcustominputofbranch{
+    z-index: 5;
+    position: absolute;
+    top: 880px; 
+    left: 1000px; 
+    width: 200px; 
+    height: 100px; 
+    background-color: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: block;
+  
+
+  }
+  .forcustominputofbranch:hover{
+    background-color: rgb(126, 92, 20);
+    transform: scale(1.1);
+
+  }
+
+
+  .forcustominputofsubject{
+    z-index: 5;
+    position: absolute;
+    top: 1400px; 
+    left: 1000px; 
+    width: 200px; 
+    height: 100px; 
+    background-color: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: block;
+  
+
+  }
+  .forcustominputofsubject:hover{
+    background-color: rgb(126, 92, 20);
+    transform: scale(1.1);
+
+  }
+  .submitdatatomongo{
+    z-index: 5;
+    position: absolute;
+    top: 1800px; 
+    left: 1000px; 
+    width: 200px; 
+    height: 100px; 
+    background-color: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: none;
+  }
+
+  .submitdatatomongo:hover{
+    background-color: rgb(126, 92, 20);
+    transform: scale(1.1);
+
+  }
+  .allreset{
+    
+    position: fixed;
+    left: 85rem;
+    top: 35rem;
+    width: 200px; 
+    height: 100px; 
+    background-color: #FFEBCD;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: none;
+  }
+
+  .allreset:hover{
+    background-color: rgb(126, 92, 20);
+    transform: scale(1.1);
+
+  }
+
+.popuplab{
+  position: fixed;
+  z-index: 999;
+  width: 1000px;
+  height: 600px;
+  left: 16rem;
+  top: 10rem;
+  border-radius: 50px 50px 50px 50px ;
+  background-color: wheat;
+  border: solid 5px  rgb(126, 92, 20);
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+
+}
+
+.confirtopmcreatinglab{
+  position: absolute;
+  left: 20rem;
+  z-index: 9999;
+  top: 25rem;
+  width:20rem ;
+  height: 5rem;
+  background-color: #8F6600FF;
+  border-radius: 20px 20px 20px 20px;
+    border-color: #8F6600FF ; 
+    box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+  transform: scale(1);
+  transition: all 0.1s ease-in-out;
+
+}
+.confirtopmcreatinglab:hover{
+  transform: scale(1.2);
+  
+}
+
+
+
+
+
+.confirmnookingdd{
+  position: fixed;
+  left: 4rem;
+
+    font-size: 40px;
+    cursor: pointer;
+  top: 10px;
+}
+
+
+
+
+
+
+.yearpop{
+  position:fixed;
+  font-size: 30px;
+  width:10rem;
+  background-color: #ED7D2DFF;
+
+
+  pointer-events: none;
+ 
+  height: 50px;
+  border-radius: 20px 20px 20px 20px ;
+  top: 10rem;
+  border-color: #ED7D2DFF ; 
+    box-shadow: 0px 0px 5px #ED7D2DFF, 0px 0px 17px #ED7D2DFF;
+}
+
+.branchpop{
+  position:fixed;
+  font-size: 30px;
+  width:10rem;
+  left: 14rem;
+  background-color: #ED7D2DFF;
+
+
+  pointer-events: none;
+ 
+  height: 50px;
+  border-radius: 20px 20px 20px 20px ;
+  top: 10rem;
+  border-color: #ED7D2DFF ; 
+    box-shadow: 0px 0px 5px #ED7D2DFF, 0px 0px 17px #ED7D2DFF;
+  }
+
+.subjectpop{
+  position:fixed;
+  font-size: 30px;
+  width:10rem;
+  left: 28rem;
+  background-color: #ED7D2DFF;
+
+
+  pointer-events: none;
+ 
+  height: 50px;
+  border-radius: 20px 20px 20px 20px ;
+  top: 10rem;
+  border-color: #ED7D2DFF ; 
+  box-shadow: 0px 0px 5px #ED7D2DFF, 0px 0px 17px #ED7D2DFF;
+}
+
+.dateandtimepop{
+  position:fixed;
+  font-size: 30px;
+  width:20rem;
+  left: 42rem;
+  background-color: #ED7D2DFF;
+
+
+  pointer-events: none;
+ 
+  height: 50px;
+  border-radius: 20px 20px 20px 20px ;
+  top: 10rem;
+  border-color: #ED7D2DFF ; 
+    box-shadow: 0px 0px 5px #ED7D2DFF, 0px 0px 17px #ED7D2DFF;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* a{
+    text-decoration-color: black  ;
+  }
+  .submitbox{
+    position:fixed;
+    z-index: 50;
+    width: 40rem;
+    height: 40rem;
+    top:5rem;
+    left: 30rem;
+    background-color: #DEB887;
+    border-radius: 5%;
+    transform: scale(0);
+    border:  solid 5px  rgb(126, 92, 20);
+    transition: all 0.6s ease-in-out;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255); 
+   
+  } */
+  /* .confirmation{
+    position: fixed;
+    cursor: pointer;
+    width: 10rem;
+    left: 130px;
+    top: 35rem;
+    height: 20px;
+    transform: scale(0);
+    background-color: rgb(0, 0, 0);
+
+
+  } */
+
+.option_show_all_created_labs{
+  position: absolute;
+  top: 10rem;
+  left: -3rem;
+  transform: scale(1);
+  background-color: #DEB887;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+ 
+}
+
+.option_show_all_created_labs:hover{
+  transform: scale(1.1);
+}
+
+.PopupForCreatedLabs{
+  position: fixed ;
+  left: 8rem;
+  top: 6rem ;
+  z-index: 999;
+  width: 86rem;
+  height:40rem ;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5%;
+  transform: scale(0);  
+  overflow-x: hidden;
+  background-color: #DEB887;
+  border:  solid 5px  rgb(126, 92, 20);
+  border-radius: 20px 20px 20px 20px; 
+  box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+
+}
+
+
+
+
+.bookedhistoryheader{
+  cursor: url('C:/Users/P.SUJITH/OneDrive/Desktop/a/after/reck/react/reactproject/adan_front/public/imagesre/ggoo-removebg-preview.png'), auto;
+  pointer-events: none;
+}
+
+
+.setppeddata{
+  text-transform: uppercase;
+}
+
+
+
+.detailsblockinmanagement{
+  cursor: pointer;
+  background-color: #ffffff;
+  transform: scale(1);
+  border:  solid 5px  rgb(255, 255, 255);
+  border-radius: 20px 20px 20px 20px; 
+  box-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255);
+  transition: all 0.15s ease-in-out;
+
+}
+.detailsblockinmanagement:hover{
+  transform: scale(1.1);
+  background-color: #ffffff;
+  border:  solid 5px  #8F6600FF;
+  border-radius: 20px 20px 20px 20px; 
+  box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+
+}
+.setppeddata{
+  margin-top: 3px;
+  height: 200px;
+  width: 100%;
+}
+.setppeddataheader{
+  margin-top: 5px;
+  height: 200px;
+  width: 100%;
+}
+
+.container-fluid-seps{
+  height: 44px;
+  width: 100%;
+  overflow: hidden;
+  border-bottom:  solid 5px  #8F6600FF;
+  transition: all 0.3s ease-in-out;
+}
+.container-fluid-sepsheader{
+  height: 35px;
+  overflow: hidden;
+
+}
+
+.managestudentdetailsstyleapply{
+  margin-top: 20px;
+  cursor: pointer;
+  color: #8F6600FF;
+  border-radius: 20px 20px 20px 20px ;
+  border: #8F6600FF solid 3px;
+  background-color: white;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+.managestudentdetailsstyleapply:hover{
+  transform: scale(1.1);
+
+
+}
+.deletestyleapply{
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  border-radius: 20px 20px 20px 20px ;
+  border: rgb(255, 255, 255) solid 3px;
+  background-color: #8F6600FF;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+.deletestyleapply:hover{
+  transform: scale(1.1);
+
+
+}

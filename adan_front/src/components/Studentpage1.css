@@ -1,0 +1,343 @@
+
+.yearbox1avail{
+  position: absolute; 
+  cursor: pointer;
+  top: 300px; 
+  left: 0px;
+  width: 300px; 
+  height: 67px; 
+  background: #8F6600FF; 
+  border-radius: 8px; 
+  border-radius:  0px 40px 40px 0px ;
+  box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+  transition: all 0.3s ease;
+}
+
+.yearbox1avail:hover{
+ scale: 1.1;
+
+}
+
+.buton{
+  cursor: pointer;
+}
+.yeartextavail{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 14px;
+}
+
+.databox{
+  position: absolute;
+  left: 50%;
+ 
+}
+
+
+
+.databox h3 {
+  
+  font-size: 18px;
+  text-align: center;
+}
+.sp{
+  
+  height: 300px;
+  background-color: #ED7D2DFF;
+  width: 800px;
+  left: -650px;
+  margin-bottom:5rem;
+  margin-left: -30rem;
+  border-radius: 5px 5px 5px 5px; 
+  box-shadow: 0px 0px 2px #ED7D2DFF, 0px 5px 10px #ED7D2DFF;
+ 
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+
+  
+}
+.sp:hover{
+  box-shadow: 0px 0px 2px #ED7D2DFF, 0px 5px 20px #ED7D2DFF;
+
+  scale: 1.06;
+}
+
+ .booknow{
+  color: wheat;
+  scale: 0.8;
+  font-size: xx-large;
+  height: 50px;
+  background-color:#8F6600FF; 
+  width: 800px;
+  border-radius:  0px 0px 0px 0px ;
+  box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+}
+.booknow:hover{
+  box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 20px #8F6600FF;
+  border-radius:  30px 30px 30px 30px ;
+  scale: 0.95;
+}
+.collegetext{
+ font-size: 40px;
+ border-radius:  0px 0px 60px 60px ;
+ box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+ width: 300px;
+ color: wheat;
+
+
+  left: 390px;
+  background-color:  #8F6600FF;
+}
+
+.subjecttext{
+  font-size: 60px;
+  color: wheat;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.iiii{
+  border:  3px solid  wheat;
+
+
+}
+.datetext{
+  color: wheat;
+  top: -100px;
+  font-size: 30px;
+ border-radius:  60px 60px 60px 0px ;
+ box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+ width: 300px;
+ left: 300px;
+  background-color:  #8F6600FF;
+}
+.col-5{
+  margin-top: 30px;
+}
+.ybybyb {
+  color: wheat;
+  margin-top: 50px;
+}
+
+
+
+.popup{
+  position: fixed;
+  top: 15rem;
+  left: 20rem;
+  z-index: 100;
+  width: 900px;
+  border:  solid 5px  rgb(126, 92, 20);
+  height: 500px;
+  border-radius: 20px 20px 20px 20px;
+  transform: scale(0);
+  background-color: wheat;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+.popbranch{
+  position: fixed;
+  width: 100px;
+  height: 50px;
+  left: 30px;
+  top: 85px;
+  background-color: #ED7D2DFF;
+  font-size: 30px;
+  border-radius: 5px 5px 5px 5px; 
+  box-shadow: 0px 0px 2px #ED7D2DFF, 0px 5px 10px #ED7D2DFF;
+  
+}
+
+.popyear{
+  pointer-events: none;
+  position: fixed;
+  width: 400px;
+  height: 50px;
+  left: 200px;
+  top: 85px;
+  background-color: #ED7D2DFF;
+  font-size: 30px;
+  border-radius: 5px 5px 5px 5px; 
+  box-shadow: 0px 0px 2px #ED7D2DFF, 0px 5px 10px #ED7D2DFF;
+}
+
+
+.popsubject{
+  pointer-events: none;
+  position: fixed;
+  width: 100%px;
+  height: 50px;
+  left: 700px;
+
+top: 85px;
+
+  background-color: #ED7D2DFF;
+  font-size: 30px;
+  border-radius: 5px 5px 5px 5px; 
+  box-shadow: 0px 0px 2px #ED7D2DFF, 0px 5px 10px #ED7D2DFF;
+}
+
+.popcollege{
+  pointer-events: none;
+  display: none;
+}
+.popdateandtime{
+
+  position: fixed;
+  pointer-events: none;
+  top: 12rem;
+  left: 250px;
+  font-size: 50px;
+  width: 400px;
+  border: solid 4px #ED7D2DFF;
+  height: 80px;
+  
+ 
+
+}
+
+.confirmbook{
+  position: fixed;
+  top: 160px;
+  margin-top: 10rem;
+  width: 500px;
+  height: 80px;
+  background-color: rgb(126, 92, 20);
+  margin-left: 13rem;
+  transform: scale(1);
+  border-radius:  60px 60px 60px 60px ;
+  box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.confirmbook:hover{
+  transform: scale(1.1);
+}
+.cbbl{
+  pointer-events: none;
+}
+
+.PopupForbookedLabs{
+  position: fixed ;
+  left: 8rem;
+  top: 6rem ;
+  z-index: 999;
+  width: 86rem;
+  height:40rem ;
+  transition: all 0.5s ease-in-out;
+  background-color: #DEB887;
+  border-radius: 5%;
+  transform: scale(0);  
+  overflow-x: hidden;
+  border:  solid 5px  rgb(126, 92, 20);
+  border-radius: 20px 20px 20px 20px; 
+  box-shadow: 0px 0px 5px #8F6600FF, 0px 0px 4px #8F6600FF;
+
+}
+.bookedhistoryheader{
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
