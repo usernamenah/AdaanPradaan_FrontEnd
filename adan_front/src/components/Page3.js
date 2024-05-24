@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import React, { useEffect, useRef } from 'react';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import axios from 'axios'
 
 export default function Page3() {
     var checkerdisplaythebooked = true;
