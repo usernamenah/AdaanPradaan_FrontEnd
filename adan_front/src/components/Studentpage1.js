@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import axios from 'axios'
 import "./Studentpage1.css"
 
 export default function Studentpage1() {
@@ -25,7 +25,7 @@ export default function Studentpage1() {
         console.log(student_booked);
         // alert("Username: " + storedUsername + "\nDate of Birth: " + storedDOB);
         try {
-            const response = await fetch('/api/showlabstostudent', {
+            const response = await axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/showlabstostudent', {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json",
@@ -116,14 +116,14 @@ export default function Studentpage1() {
             const cls1 = { bc , jj };
 
 
-            const response = await fetch('https://adaan-pradaan-back-end.vercel.app/api/updatethestudentbooked', {
+            const response = await axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/updatethestudentbooked', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(cls)
             });
-            const response1 = await fetch('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementstudentbookings', {
+            const response1 = await axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementstudentbookings', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",

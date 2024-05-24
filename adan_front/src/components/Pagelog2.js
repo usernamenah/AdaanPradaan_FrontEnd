@@ -1,6 +1,7 @@
 import React from 'react'
 import "./pagelog2.css"
 import { Link } from "react-router-dom"
+import axios from 'axios';
 
 export default function Pagelog2() {
     async function fetchData(s) {
@@ -10,7 +11,7 @@ export default function Pagelog2() {
                 const email = document.getElementById("une").value;
                 const password = document.getElementById("pwd").value;
                
-                const response = await fetch('https://adaan-pradaan-back-end.vercel.app/api/login', {
+                const response = await axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -55,7 +56,7 @@ export default function Pagelog2() {
 
                 const data = { email, password , idno };
 
-                const response = await fetch('https://adaan-pradaan-back-end.vercel.app/api/login_management', {
+                const response = await axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/login_management', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -161,7 +162,7 @@ export default function Pagelog2() {
 
         console.log(cls);
         // fetch('http://localhost:3010/sellers/postdata'
-        fetch('https://adaan-pradaan-back-end.vercel.app/api/register', {
+        axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/register', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -198,7 +199,7 @@ export default function Pagelog2() {
         };
         console.log(cls);
         // fetch('http://localhost:3010/sellers/postdata'
-        fetch('https://adaan-pradaan-back-end.vercel.app/api/register_management', {
+        axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/register_management', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
