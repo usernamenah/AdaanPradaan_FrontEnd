@@ -140,14 +140,14 @@ export default function Studentpage1() {
             const cls1 = { bc , jj };
 
 
-            const response = await axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/updatethestudentbooked', {
+            const response = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethestudentbooked', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(cls)
             });
-            const response1 = await axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementstudentbookings', {
+            const response1 = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementstudentbookings', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",
