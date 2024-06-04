@@ -25,7 +25,7 @@ export default function Studentpage1() {
         console.log(student_booked);
         // alert("Username: " + storedUsername + "\nDate of Birth: " + storedDOB);
         try {
-            const response = await axios.fetch('https://adaan-pradaan-back-end.vercel.app/api/showlabstostudent', {
+            const response = await axios.get('https://adaan-pradaan-back-end.vercel.app/api/showlabstostudent', {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json",
