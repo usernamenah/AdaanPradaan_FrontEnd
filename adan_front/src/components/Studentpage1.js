@@ -24,21 +24,45 @@ export default function Studentpage1() {
         console.log(student_year);
         console.log(student_booked);
         // alert("Username: " + storedUsername + "\nDate of Birth: " + storedDOB);
+        // try {
+        //     const response = await axios.get('https://adaan-pradaan-back-end.vercel.app/api/showlabstostudent', {
+        //         method: 'GET',
+        //         headers: {
+        //             "Content-Type": "application/json",
+        //         },
+
+        //     })
+        //     if (!response.ok) {
+        //         throw new Error('Failed to fetch data');
+        //     }
+        //     const data = await response.json();
+        //     setData(data);
+        // } catch (error) {
+        //     console.error('Error fetching data:', error);
+        // }
         try {
             const response = await axios.get('https://adaan-pradaan-back-end.vercel.app/api/showlabstostudent', {
-                method: 'GET',
                 headers: {
                     "Content-Type": "application/json",
                 },
-
-            })
-            // if (!response.ok) {
-            //     throw new Error('Failed to fetch data');
-            // }
-            const data = await response.json();
+            });
+            const data = response.data;
             setData(data);
         } catch (error) {
-            console.error('Error fetching data:', error);
+            // Detailed error handling
+            if (error.response) {
+                // Server responded with a status other than 200 range
+                console.error('Error response:', error.response.data);
+                console.error('Error status:', error.response.status);
+                console.error('Error headers:', error.response.headers);
+            } else if (error.request) {
+                // Request was made but no response was received
+                console.error('Error request:', error.request);
+            } else {
+                // Something happened in setting up the request
+                console.error('Error message:', error.message);
+            }
+            console.error('Error config:', error.config);
         }
     }
 
