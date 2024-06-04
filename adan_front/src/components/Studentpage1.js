@@ -32,9 +32,9 @@ export default function Studentpage1() {
                 },
 
             })
-            if (!response.ok) {
-                throw new Error('Failed to fetch data');
-            }
+            // if (!response.ok) {
+            //     throw new Error('Failed to fetch data');
+            // }
             const data = await response.json();
             setData(data);
         } catch (error) {
