@@ -355,12 +355,6 @@ export default function Page3() {
                 },
                 body: JSON.stringify(cls)
             });
-            if (response.ok) {
-                const data = await response.json();
-                console.log("success:", data);
-            } else {
-                throw new Error('Network response was not ok.');
-            }
         } catch (error) {
             console.error("error:", error);
         }
