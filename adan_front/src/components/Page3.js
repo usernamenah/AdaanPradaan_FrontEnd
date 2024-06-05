@@ -349,15 +349,18 @@ export default function Page3() {
         console.log(cls);
         try {
             const response = await axios.post('https://adaan-pradaan-back-end.vercel.app/api/add_lab', {
-                method: 'POST',
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(cls)
+              method: 'POST',
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(cls)
             });
-        } catch (error) {
+            
+            console.log("Data sent successfully:", response.data); 
+          } catch (error) {
             console.error("error:", error);
-        }
+          }
+          
 
 
         const popup = document.getElementById("popuplab");
