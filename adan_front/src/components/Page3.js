@@ -337,6 +337,10 @@ export default function Page3() {
         var idfourth = mdbstr[3];
 
         var idfifth = getCookie("college_college");;
+        alert(idfirst);
+        alert(idsec);
+        alert(idthird);
+        alert(idfourth);
         alert(idfifth);
 
         var cls = {
@@ -348,6 +352,7 @@ export default function Page3() {
             deleted: "no"
         };
         console.log(cls);
+        alert(cls);
         try {
             const response = await axios.post('https://adaan-pradaan-back-end.vercel.app/api/add_lab', {
               method: 'POST',
