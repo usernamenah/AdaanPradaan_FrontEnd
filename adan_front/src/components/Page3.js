@@ -336,7 +336,7 @@ export default function Page3() {
         var idthird = mdbstr[2];
         var idfourth = mdbstr[3];
 
-        var idfifth = getCookie("college_college");;
+        var idfifth = getCookie("college_college");
         
 
         var cls = {
@@ -348,6 +348,8 @@ export default function Page3() {
             deleted: "no"
         };
         console.log(cls);
+        console.log(cls.deleted);
+        alert(cls.deleted);
         try {
             const response = await axios.post('https://adaan-pradaan-back-end.vercel.app/api/addthenewlab', {
               method: 'POST',
@@ -356,7 +358,6 @@ export default function Page3() {
               },
               body: JSON.stringify(cls)
             });
-            
             console.log("Data sent successfully:", response.data); 
           } catch (error) {
             // Detailed error handling
