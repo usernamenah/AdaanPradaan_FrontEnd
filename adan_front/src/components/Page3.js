@@ -337,6 +337,7 @@ export default function Page3() {
         var idfourth = mdbstr[3];
 
         var idfifth = getCookie("college_college");;
+        alert(idfifth);
 
         var cls = {
             year: idfirst,
