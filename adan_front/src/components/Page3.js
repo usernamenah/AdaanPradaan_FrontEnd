@@ -321,69 +321,167 @@ export default function Page3() {
         bringinp.style.display = "none";
 
     }
-
-
     async function onbuttonclick() {
-
-        for (let i = 0; i < 4; i++) {
-            if (mdbstr[i].length === 0) {
-                alert("fill all feilds..!!");
-                return;
-            }
+        // Ensure mdbstr array exists and contains required fields
+        if (!Array.isArray(mdbstr) || mdbstr.length < 4) {
+          alert("The mdbstr array is not properly defined or contains fewer than 4 elements.");
+          return;
         }
-        var idfirst = mdbstr[0];
-        var idsec = mdbstr[1];
-        var idthird = mdbstr[2];
-        var idfourth = mdbstr[3];
+      
+        // Enhanced validation loop
+        for (let i = 0; i < 4; i++) {
+          if (mdbstr[i].length === 0) {
+            alert("Fill all fields..!!");
+            return;
+          }
+        }
+      
+        const idfirst = mdbstr[0];
+        const idsec = mdbstr[1];
+        const idthird = mdbstr[2];
+        const idfourth = mdbstr[3];
+      
+        const idfifth = getCookie("college_college");
+      
+        const cls = {
+          year: idfirst,
+          branch: idsec,
+          subject: idthird,
+          date: idfourth,
+          college: idfifth,
+          deleted: "no"
+        };
+      
+        try {
+          const response = await axios.post('https://adaan-pradaan-back-end.vercel.app/api/addthenewlab', cls);
+          console.log("Data sent successfully:", response.data); // Handle successful response here
+      
+          // Only proceed if the API call was successful
+          const popup = document.getElementById("popuplab");
+          popup.style.transform = "scale(0)";
+          alert("Successful");
+          fetchthevreatedlabspopdata();
+          window.location.href = "/Login2";
+        } catch (error) {
+          console.error('Error:', error); // Log the entire error object for better debugging
+          if (error.response) {
+            console.error('Error response:', error.response.data);
+            console.error('Error status:', error.response.status);
+            // Handle specific API validation errors based on error.response.data
+            alert(`Error: ${error.response.data.message || "An error occurred"}`);
+          } else {
+            // Handle other types of errors (e.g., network issues)
+            alert('An error occurred while sending data.');
+          }
+        }
+      }
+      
+    // async function () {
 
-        var idfifth = getCookie("college_college");
+    //     for (let i = 0; i < 4; i++) {
+    //         if (mdbstr[i].length === 0) {
+    //             alert("fill all feilds..!!");
+    //             return;
+    //         }
+    //     }
+    //     var idfirst = mdbstr[0];
+    //     var idsec = mdbstr[1];
+    //     var idthird = mdbstr[2];
+    //     var idfourth = mdbstr[3];
+
+    //     var idfifth = getCookie("college_college");
         
 
-        var cls = {
-            year: idfirst,
-            branch: idsec,
-            subject: idthird,
-            date: idfourth,
-            college: idfifth,
-            deleted: "no"
-        };
-        console.log(cls);
-        console.log(cls.deleted);
-        alert(cls.deleted);
-        try {
-            const response = await axios.post('https://adaan-pradaan-back-end.vercel.app/api/addthenewlab', {
-              method: 'POST',
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(cls)
-            });
-            console.log("Data sent successfully:", response.data); 
-          } catch (error) {
-            // Detailed error handling
-            if (error.response) {
-                // Server responded with a status other than 200 range
-                console.error('Error response:', error.response.data);
-                console.error('Error status:', error.response.status);
-                console.error('Error headers:', error.response.headers);
-            } else if (error.request) {
-                // Request was made but no response was received
-                console.error('Error request:', error.request);
-            } else {
-                // Something happened in setting up the request
-                console.error('Error message:', error.message);
-            }
-            console.error('Error config:', error.config);
-        }
+    //     var cls = {
+    //         year: idfirst,
+    //         branch: idsec,
+    //         subject: idthird,
+    //         date: idfourth,
+    //         college: idfifth,
+    //         deleted: "no"
+    //     };
+    //     alert(cls.deleted);
+    //     try {
+    //         const response = await axios.post('https://adaan-pradaan-back-end.vercel.app/api/addthenewlab', {
+    //           method: 'POST',
+    //           headers: {
+    //             "Content-Type": "application/json",
+    //           },
+    //           body: JSON.stringify(cls)
+    //         });
+    //         console.log("Data sent successfully:", response.data); 
+    //       } catch (error) {
+    //         // Detailed error handling
+    //         if (error.response) {
+    //             // Server responded with a status other than 200 range
+    //             console.error('Error response:', error.response.data);
+    //             console.error('Error status:', error.response.status);
+    //             console.error('Error headers:', error.response.headers);
+    //         } else if (error.request) {
+    //             // Request was made but no response was received
+    //             console.error('Error request:', error.request);
+    //         } else {
+    //             // Something happened in setting up the request
+    //             console.error('Error message:', error.message);
+    //         }
+    //         console.error('Error config:', error.config);
+    //     }
           
+    // async function onbuttonclick() {
+    //     // Enhanced validation loop (example)
+    //     for (let i = 0; i < 4; i++) {
+    //       if (mdbstr[i].length === 0) { 
+    //         alert("fill all fields..!!");
+    //         return;
+    //       }
+    //     }
+      
+    //     var idfirst = mdbstr[0];
+    //     var idsec = mdbstr[1];
+    //     var idthird = mdbstr[2];
+    //     var idfourth = mdbstr[3];
+      
+    //     var idfifth = getCookie("college_college");
+      
+    //     var cls = {
+    //       year: idfirst,
+    //       branch: idsec,
+    //       subject: idthird,
+    //       date: idfourth,
+    //       college: idfifth,
+    //       deleted: "no"
+    //     };
+      
+    //     try {
+    //       const response = await axios.post('https://adaan-pradaan-back-end.vercel.app/api/addthenewlab', {
+    //         method: 'POST',
+    //         headers: {
+    //           "Content-Type": "application/json",
+    //         },
+    //         body: JSON.stringify(cls)
+    //       });
+    //       console.log("Data sent successfully:", response.data); // Handle successful response here
+    //     } catch (error) {
+    //       console.error('Error:', error); // Log the entire error object for better debugging
+    //       if (error.response) {
+    //         console.error('Error response:', error.response.data);
+    //         console.error('Error status:', error.response.status);
+    //         // Handle specific API validation errors based on error.response.data
+    //       } else {
+    //         // Handle other types of errors (e.g., network issues)
+    //       }
+    //     }
+      
+      
 
 
-        const popup = document.getElementById("popuplab");
-        popup.style.transform = "scale(0)";
-        alert("succesful");
-        fetchthevreatedlabspopdata();
-        window.location.href = "/Login2";
-    }
+
+    //     const popup = document.getElementById("popuplab");
+    //     popup.style.transform = "scale(0)";
+    //     alert("succesful");
+    //     fetchthevreatedlabspopdata();
+    //     window.location.href = "/Login2";
+    // }
 
     function popup() {
 
@@ -920,5 +1018,4 @@ export default function Page3() {
         </>
 
     )
-
 }
