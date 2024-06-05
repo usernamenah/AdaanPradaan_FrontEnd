@@ -517,14 +517,7 @@ export default function Page3() {
 
 
             const cls = { email, college, booked1 };
-            const response = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementdeleted', {
-
-                method: 'PUT',
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(cls)
-            });
+            const response = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementdeleted', cls);
 
             if (response.ok) {
                 alert("succesfully deleted in data base  ");
@@ -550,14 +543,7 @@ export default function Page3() {
 
 
             const cls = { email, college, booked1 };
-            const response = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementbooked', {
-
-                method: 'PUT',
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(cls)
-            });
+            const response = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementbooked', cls);
 
             const data = await response.json();
             console.log(data);
