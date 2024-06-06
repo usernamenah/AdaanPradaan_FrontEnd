@@ -509,58 +509,127 @@ export default function Page3() {
         }
 
     }
+
     async function tochangedataafterdeleted(arr) {
         try {
-            const email = college_email;
-            const college = college_college;
+            const email = college_email; // Ensure college_email is defined
+            const college = college_college; // Ensure college_college is defined
             const booked1 = arr.toString();
-
-
+    
             const cls = { email, college, booked1 };
             const response = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementdeleted', cls);
-
-            if (response.ok) {
-                alert("succesfully deleted in data base  ");
+    
+            if (response.status === 200) {
+                alert("Successfully deleted in the database.");
             } else {
-                alert("something fishy broo.....!!");
-
+                console.error('Unexpected response status:', response.status);
+                alert("Something went wrong. Please try again.");
             }
         } catch (error) {
-            console.error('Error occurred:', error);
+            if (error.response) {
+                // The request was made and the server responded with a status code
+                // that falls out of the range of 2xx
+                console.error('Server responded with an error:', error.response.status, error.response.data);
+                alert(`Error: ${error.response.status} - ${error.response.data.message || 'Server error'}`);
+            } else if (error.request) {
+                // The request was made but no response was received
+                console.error('No response received:', error.request);
+                alert("No response from the server. Please check your network connection.");
+            } else {
+                // Something happened in setting up the request that triggered an Error
+                console.error('Error setting up request:', error.message);
+                alert(`Error: ${error.message}`);
+            }
         }
-
     }
+    
+    // async function tochangedataafterdeleted(arr) {
+    //     try {
+    //         const email = college_email;
+    //         const college = college_college;
+    //         const booked1 = arr.toString();
 
 
+    //         const cls = { email, college, booked1 };
+    //         const response = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementdeleted', cls);
+
+    //         if (response.ok) {
+    //             alert("succesfully deleted in data base  ");
+    //         } else {
+    //             alert("something fishy broo.....!!");
+
+    //         }
+    //     } catch (error) {
+    //         console.error('Error occurred:', error);
+    //     }
+
+    // }
 
 
     async function fetchthevreatedlabspopdata() {
-
         try {
-            const email = college_email;
-            const college = college_college;
-            const booked1 = mdbstr.toString();
-
-
+            const email = college_email; // Ensure college_email is defined
+            const college = college_college; // Ensure college_college is defined
+            const booked1 = mdbstr.toString(); // Ensure mdbstr is defined
+    
             const cls = { email, college, booked1 };
             const response = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementbooked', cls);
-
-            const data = await response.json();
-            console.log(data);
-            alert(data);
-
-            if (response.ok) {
-                console.log("succesfully ");
+    
+            if (response.status === 200) {
+                const data = response.data;
+                console.log(data);
+                alert(JSON.stringify(data, null, 2));
             } else {
-                alert("something fishy broo.....!!");
-
+                console.error('Unexpected response status:', response.status);
+                alert("Something went wrong. Please try again.");
             }
         } catch (error) {
-            console.error('Error occurred:', error);
+            if (error.response) {
+                // The request was made and the server responded with a status code
+                // that falls out of the range of 2xx
+                console.error('Server responded with an error:', error.response.status, error.response.data);
+                alert(`Error: ${error.response.status} - ${error.response.data.message || 'Server error'}`);
+            } else if (error.request) {
+                // The request was made but no response was received
+                console.error('No response received:', error.request);
+                alert("No response from the server. Please check your network connection.");
+            } else {
+                // Something happened in setting up the request that triggered an Error
+                console.error('Error setting up request:', error.message);
+                alert(`Error: ${error.message}`);
+            }
         }
-
-
     }
+    
+
+
+    // async function fetchthevreatedlabspopdata() {
+
+    //     try {
+    //         const email = college_email;
+    //         const college = college_college;
+    //         const booked1 = mdbstr.toString();
+
+
+    //         const cls = { email, college, booked1 };
+    //         const response = await axios.put('https://adaan-pradaan-back-end.vercel.app/api/updatethemanagementbooked', cls);
+
+    //         const data = await response.json();
+    //         console.log(data);
+    //         alert(data);
+
+    //         if (response.ok) {
+    //             console.log("succesfully ");
+    //         } else {
+    //             alert("something fishy broo.....!!");
+
+    //         }
+    //     } catch (error) {
+    //         console.error('Error occurred:', error);
+    //     }
+
+
+    // }
     function handleMouseOut1() {
         const ll = document.getElementById("PopupForCreatedLabs");
         ll.style.transform = "scale(0)";
