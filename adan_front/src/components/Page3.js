@@ -342,7 +342,8 @@ export default function Page3() {
         const idfourth = mdbstr[3];
       
         const idfifth = getCookie("college_college");
-      
+        alert(idsec);
+        alert(idthird);
         const cls = {
           year: idfirst,
           branch: idsec,
@@ -641,6 +642,7 @@ export default function Page3() {
         if (newdivshead) {
             newdivshead.remove();
         }
+
         let bookedarr = getCookie("college_booked").split("~");
         if (bookedarr.length === 1) {
             const bookedhistoryheader = document.getElementById("bookedhistoryheader");
