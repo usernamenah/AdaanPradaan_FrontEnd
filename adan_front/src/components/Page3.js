@@ -342,17 +342,17 @@ export default function Page3() {
         const idfourth = mdbstr[3];
       
         const idfifth = getCookie("college_college");
-        alert(idsec);
-        alert(idthird);
         const cls = {
-          year: idfirst,
-          branch: idsec,
-          subject: idthird,
-          date: idfourth,
-          college: idfifth,
-          deleted: "no"
+            year: idfirst,
+            branch: idsec,
+            subject: idthird,
+            date: idfourth,
+            college: idfifth,
+            deleted: "no"
         };
-      
+        alert(cls.branch);
+        alert(cls.subject);
+        
         try {
           const response = await axios.post('https://adaan-pradaan-back-end.vercel.app/api/addthenewlab', cls);
           console.log("Data sent successfully:", response.data); // Handle successful response here
@@ -391,8 +391,6 @@ export default function Page3() {
     //     var idfourth = mdbstr[3];
 
     //     var idfifth = getCookie("college_college");
-        
-
     //     var cls = {
     //         year: idfirst,
     //         branch: idsec,
@@ -793,7 +791,6 @@ export default function Page3() {
                     griddivin.appendChild(griddivrownext);
                     griddivin.appendChild(griddivrownext1);
                     griddivin.appendChild(griddivrownext2);
-
                     griddiv0.appendChild(griddivin);
                     griddiv.appendChild(griddiv0);
                     pedhadiv.appendChild(griddiv);
